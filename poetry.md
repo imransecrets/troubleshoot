@@ -25,7 +25,9 @@ The error message "File ... cannot be loaded because running scripts is disabled
 
 javascript
 Copy code
+
 `Set-ExecutionPolicy RemoteSigned`
+
 This command allows running scripts that you've written or obtained from trusted sources.
 
 Invalid Value Error for Poetry Virtual Environment Configuration:
@@ -36,7 +38,9 @@ To set up Poetry to create virtual environments automatically, you can use:
 
 lua
 Copy code
+
 `poetry config virtualenvs.create true`
+
 Ensure that you run this command in a PowerShell session where script execution policies allow script execution.
 
 After performing these steps, you should be able to create Poetry virtual environments without encountering errors related to script execution policies or invalid configuration values.
